@@ -1,0 +1,405 @@
+/* 개별 수정 만들기 */
+
+/*.sizeup50 { font-size:50px !important;}*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    z-index: 1001;
+    top: 0px;
+    font-size: 22px;
+}
+
+.nav_wrap {
+    position: relative;
+    max-width: 1440px;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+    margin: 0 auto;
+}
+
+nav .logo {
+    font-family: heimat-stencil, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 22px;
+}
+
+
+
+nav ul {
+    margin: 0 auto;
+    width: 1440px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: heimat-stencil, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 50px;
+}
+
+
+/*링크 걸려진 모습*/
+nav ul li a:link {#section4
+    color: black;
+}
+
+/*방문했던 링크*/
+nav ul li a:visited {
+    color: black;
+}
+
+/*마우스 오버시*/
+nav ul li a:hover {
+    color: #e5001b;
+}
+
+/*nav a태그 공통선언*/
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:link {
+    text-decoration: none !important;
+}
+
+
+
+
+/*Section 공통 선언*/
+
+
+.section2 .sect_wrap,
+.section3 .sect_wrap,
+.section5 .sect_wrap,
+.section6 .sect_wrap,
+.section7 .sect_wrap,
+.section8 .sect_wrap,
+.section13 .sect_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section5 .sect_wrap,
+.section6 .sect_wrap,
+.section7 .sect_wrap,
+.section8 .sect_wrap {
+    padding: 50px 0;
+}
+.section5 .sect_wrap{
+     padding-top: 100px;
+}
+.section8 .sect_wrap{
+     padding-bottom: 100px;
+}
+.sect_wrap .title {
+    font-size: 28px;
+}
+
+.sect_wrap p {
+    font-size: 18px;
+    line-height: 30px !important;
+}
+
+.sect_wrap {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.section5 .text_area,
+.section7 .text_area {
+    margin-left: 150px;
+}
+
+.section6 .text_area {
+    margin-right: 150px;
+}
+
+.text_sub_area {
+    padding-top: 20px;
+}
+
+
+
+
+/*collect young comment*/
+.section0 {
+    text-align: center;
+    background-image: url("../section1.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding:230px 0 0px 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+}
+
+.section0 b { position: relative; 
+    font-size: 80px;
+    font-family: heimat-stencil, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 80px;
+
+
+}
+
+
+
+/*태어난 사람들이*/
+.section1 {
+    margin-bottom: 120px;
+}
+
+.section1 .text_area {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.section1 .text_sub_area p {
+    margin-top: 10px;
+}
+
+
+
+/*청년들의 지역 이탈1*/
+.section2 { padding: 150px 0; }
+
+.section2 .image_area {
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.section2 .text_area {
+    
+    background-image: url("../section2_2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 50px;
+    padding: 140px 70px;
+}
+
+/*평생 지역을 위한*/
+
+.section3 {
+    padding: 250px 0;
+    background-image: url("../section3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 60px;
+}
+
+
+/*지역 발전을 위하여 소통해보세요*/
+
+
+.mleft {
+    position: absolute;
+    top:0;
+    z-index: 1;
+}
+
+
+.mright {
+    position: absolute;
+    bottom:0;
+    z-index: 1;
+}
+
+ .content {
+    font-family: heimat-stencil, sans-serif;
+    font-weight: 400;
+    font-size: 144px;
+}
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+
+.section4 video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+}
+
+.section4 .sect_wrap {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+
+
+.section4 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section4 .image_area {
+    width: 720px;
+}
+
+.section4 .sizeup50{ font-size:50px !important;}
+.section4 .sizeup20{ font-size:25px !important;}
+
+
+/*나만의 코멘트 박스를*/
+.section5 {
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    background-origin: padding-box;
+
+}
+
+
+.section5 .text_sub_area p {
+    text-align: left;
+}
+
+
+
+
+/*관심사 카테고리 설정*/
+.section6 {
+    box-sizing: border-box;
+    background-color: #f9fafb;
+}
+
+.section6 .text_area {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: auto;
+    max-height: 100%;
+}
+
+/*코멘트 작성*/
+.section7 {
+    box-sizing: border-box;
+    background-color: #f9fafb;
+    background-origin: padding-box;
+}
+
+
+.section7 .text_area {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+/*코멘트 스크랩*/
+.section8 {
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.section8 .text_area {
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 150px;
+}
+
+
+
+.section8 .image_area {
+    box-sizing: border-box;
+    margin-left: 30px;
+    height: 600px
+}
+
+
+/*정책 살펴보기*/
+.section12 {
+    margin: 100px auto;
+    box-sizing: border-box;
+    padding: 0px;
+    text-align: center;
+}
+
+.section12 .idea_list {
+    background-image: url(../section9_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 150px 0 80px 0;
+}
+
+.section12 .idea_list li {
+    margin-bottom: 70px;
+}
+
+
+
+
+/*내 지역을 가치있게*/
+
+.section13 { position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.section13 .text_area {
+    text-align: center; position: absolute;
+    color: white;
+
+}
+.section13 .sizeup50{ font-size:50px !important;}
+

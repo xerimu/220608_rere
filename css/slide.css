@@ -1,0 +1,128 @@
+/*슬라이드 애니메이션*/
+
+@keyframes slidy1 {
+0% { left: 0%; }
+25% { left: 0%; }
+30% { left: -100%; }
+50% { left: -100%; }
+55% { left: -200%; }
+75% { left: -200%; }
+80% { left: -300%; }
+95% { left: -300%; }
+100% { left: -300%; }
+}
+ 
+div#slider1 { overflow: hidden; width:401px; }
+div#slider1 figure img { width: 20%; float: left; }
+div#slider1 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  top:0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 7s slidy1 ease-in-out infinite;
+  animation: 7s slidy1 ease-in-out infinite; 
+}
+
+
+ @keyframes slidy2 {
+0% { left: 0%; }
+30% { left: 0%; }
+35% { left: -100%; }
+65% { left: -100%; }
+70% { left: -200%; }
+100% { left: -200%; }
+}
+ 
+div#slider2 { overflow: hidden; width:401px; }
+div#slider2 figure img { width: 20%; float: left; }
+div#slider2 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  top:0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 7.5s slidy2 ease-in-out infinite;
+  animation: 7.5s slidy2 ease-in-out infinite; 
+}
+
+
+
+
+ @keyframes slidy3 {
+0% { left: 0%; }
+30% { left: 0%; }
+35% { left: -100%; }
+65% { left: -100%; }
+70% { left: -200%; }
+100% { left: -200%; }
+}
+ 
+div#slider3 { overflow: hidden; width:401px; }
+div#slider3 figure img { width: 20%; float: left; }
+div#slider3 figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  top:0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 8s slidy3 ease-in-out infinite;
+  animation: 8s slidy3 ease-in-out infinite; 
+}
+
+
+
+
+
+
+/*인피니트 애니메이션 */
+
+
+
+.mleft {
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: mleft 32s linear infinite;
+}
+
+@keyframes mleft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+
+.mright {
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track2 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: mright 32s linear infinite;
+}
+
+@keyframes mright {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
